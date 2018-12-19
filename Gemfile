@@ -13,6 +13,8 @@ gem 'bootsnap',   '>= 1.2', require: false
 
 gem 'jquery-rails'
 
+gem 'uglifier'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3'
