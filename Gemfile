@@ -7,6 +7,8 @@ gem 'rails', '~> 5.2.1'
 
 gem 'twitter-bootstrap-rails'
 
+gem 'devise'
+
 gem 'bootsnap',   '>= 1.2', require: false
 
 gem 'jquery-rails'
@@ -14,6 +16,10 @@ gem 'jquery-rails'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
 end
 
 group :development do
