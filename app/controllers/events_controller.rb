@@ -12,14 +12,14 @@ class EventsController < ApplicationController
   end
 
   def new
-    @event = current_user.evens.build
+    @event = current_user.events.build
   end
 
   def edit
   end
 
   def create
-    @event = current_user.evens.build(event_params)
+    @event = current_user.events.build(event_params)
 
     if @event.save
       redirect_to @event, notice: 'Event was successfully created.'
@@ -47,7 +47,7 @@ class EventsController < ApplicationController
     end
 
     def set_current_user_event
-      @user = current_user.events.find(params[:id])
+      @event = current_user.events.find(params[:id])
     end
 
     def event_params
