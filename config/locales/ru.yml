@@ -3,10 +3,14 @@ ru:
     models:
       user: 'Пользователь'
       event: 'Событие'
+      photo: 'Фотография'
+      subscription: 'Подписка'
+      comment: 'Комментарий'
     attributes:
       user:
         email: 'Email'
         name: 'Имя'
+        avata: 'Аватарка'
         password: 'Пароль'
         password_confirmation: 'Подтверждение пароля'
       event:
@@ -14,6 +18,14 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+      photo:
+        photo: 'Фотография'
+      comment:
+        user_name: 'Ваше имя'
+        body: 'Комментарий'
+      subscriptions:
+        user_name: 'Ваше имя'
+        user_email: 'Ваш email'
   controllers:
     events:
       created: 'Вы создали новое мероприятие'
@@ -21,6 +33,18 @@ ru:
       deleted: 'Вы удалили мероприятие'
     users:
       updated: 'Вы обновили свой профиль'
+    comments:
+      destroyed: 'Комментарий удален'
+      created: 'Выш комментарий добавлен'
+      error: 'Ошибка с комментарием'
+    subscription:
+      created:  'Вы подписались на это событие'
+      destroyed: 'Участник отписан'
+      error: 'Подписка/отписка не сработала'
+    photos:
+      error: 'Что-то не так с фоткой'
+      created: 'Вы добавили фотографию к событию'
+      destroyed: 'Вы удалили фотографию'
   app:
     name: 'Шашлыки'
     company: 'Компания'
@@ -30,4 +54,11 @@ ru:
     many: '%{count} ошибок'
   confirm:
     are_you_sure: 'Вы уверены?'
+  comments:
+    comment:
+      destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
+subscriptions:
+  subscription:
+    destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+
 

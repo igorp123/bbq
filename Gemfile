@@ -21,6 +21,9 @@ gem 'execjs'
 
 gem 'therubyracer'
 
+gem 'carrierwave'
+gem 'rmagick'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3'
