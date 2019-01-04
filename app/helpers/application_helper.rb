@@ -8,14 +8,14 @@ module ApplicationHelper
   end
 
   def user_avatar_thumb(user)
-    if user_avatar.file.present?
+    if user.avatar.file.present?
       user.avatar.thumb.url
     else
       asset_path('user.png')
     end
   end
 
-  def event_photo(user)
+  def event_photo(event)
     photos = event.photos.persisted
 
     if photos.any?
@@ -25,7 +25,7 @@ module ApplicationHelper
     end
   end
 
-    def event_thumb(user)
+  def event_thumb(event)
     photos = event.photos.persisted
 
     if photos.any?
