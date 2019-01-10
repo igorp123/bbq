@@ -23,7 +23,7 @@ ru:
       comment:
         user_name: 'Ваше имя'
         body: 'Комментарий'
-      subscriptions:
+      subscription:
         user_name: 'Ваше имя'
         user_email: 'Ваш email'
   controllers:
@@ -57,8 +57,8 @@ ru:
   comments:
     comment:
       destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
-subscriptions:
-  subscription:
-    destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+  subscriptions:
+    subscription:
+      destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
 
 
