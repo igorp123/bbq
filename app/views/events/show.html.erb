@@ -38,7 +38,6 @@
         </div>
       </div>
 
-
       <div class="event-comments buffer-top">
         <%= render partial: 'comments/form', locals: {comment: @new_comment || @event.comments.build} %>
         <div class="buffer-both">
@@ -46,7 +45,6 @@
         </div>
       </div>
     </div>
-
 
     <div class="col-md-4">
       <div class="event-owner">
@@ -62,14 +60,17 @@
           </p>
         </div>
       </div>
-      <div class="event-subscription-form">
-        <h4>Я пойду</h4>
-        <div>
-          <%= render partial: 'subscriptions/form', locals: {
-            subscription: @new_subscription || @event.subscriptions.build}
-          %>
+
+      <% unless @event.user == current_user %>
+        <div class="event-subscription-form">
+          <h4>Я пойду</h4>
+          <div>
+            <%= render partial: 'subscriptions/form', locals: {
+              subscription: @new_subscription || @event.subscriptions.build}
+            %>
+          </div>
         </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>
