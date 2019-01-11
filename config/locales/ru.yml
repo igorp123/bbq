@@ -60,5 +60,5 @@ ru:
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
-
+      email_busy: 'Такой адрес уже используется'
 
