@@ -109,7 +109,6 @@ Rails.application.configure do
     user_name: ENV['G_USERNAME'],
     password: ENV['G_PASS'],
     authentication: 'plain',
-    domain: 'gmail.com',
     enable_starttls_auto: true
   }
 
