@@ -95,7 +95,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = {host: 'gobarbecue.herokuapp.com'}
 
   # Вываливать ли посетителю сайта ошибки при отправке писем
-  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.raise_delivery_errors = false
 
   # Делать рассылку писем (если false — мэйлер только имитирует работу, реальных писем не уходит)
   config.action_mailer.perform_deliveries = true
