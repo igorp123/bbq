@@ -47,5 +47,4 @@ end
         EventMailer.comment(event, comment, mail).deliver_now
       end
     end
-
 end
