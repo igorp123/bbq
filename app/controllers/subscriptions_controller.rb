@@ -6,7 +6,7 @@ class SubscriptionsController < ApplicationController
     @new_subscription = @event.subscriptions.build(subscription_params)
     @new_subscription.user = current_user
 
-    unless current_user_can_edit?(@event)
+    if current_user_can_subscribe?(@event)
       if @new_subscription.save
         EventMailer.subscription(@event, @new_subscription).deliver_now
 
