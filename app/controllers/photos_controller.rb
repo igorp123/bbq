@@ -1,6 +1,6 @@
 class PhotosController < ApplicationController
   before_action :set_event, only: [:create, :destroy]
-  before_action :photo, only: [:destroy]
+  before_action :set_photo, only: [:destroy]
 
   def create
     @new_photo = @event.photos.build(photo_params)
@@ -19,7 +19,7 @@ class PhotosController < ApplicationController
     message = {notice: I18n.t('controllers.photos.destroyed')}
 
     if current_user_can_edit?(@photo)
-      @foto.destroy
+      @photo.destroy
     else
       message = {alert: I18n.t('controllers.photos.error')}
     end

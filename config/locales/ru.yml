@@ -62,6 +62,9 @@ ru:
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+  photos:
+    photo:
+      destroy_confirm: 'Вы уверены, что хотите удалить эту фотку?'
       email_busy: 'Такой адрес уже используется'
   event_mailer:
     comment:
