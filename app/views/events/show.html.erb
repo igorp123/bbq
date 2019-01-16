@@ -47,6 +47,10 @@
     </div>
 
     <div class="col-md-4">
+
+      <div class="buffer-top event-map" id="map" data-address=<%= @event.address %>>
+      </div>
+
       <div class="event-owner">
         <h4>Зовет!</h4>
         <p><%= render partial: 'users/user', object: @event.user %></p>
@@ -71,10 +75,6 @@
           </div>
         </div>
       <% end %>
-
-      <div class="buffer-top" id="map" data-address=<%= @event.address %> style="height: 300px">
-      </div>
-
   </div>
   </div>
 </div>
