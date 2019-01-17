@@ -123,7 +123,7 @@ Rails.application.configure do
   # }
 
   config.action_mailer.smtp_settings = {
-   authentication => :plain,
+  :authentication => :plain,
   :address => "smtp.mailgun.org",
   :port => 587,
   :domain => ENV['MAILGUN_DOMAIN'],
