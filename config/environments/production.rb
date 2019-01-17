@@ -122,7 +122,7 @@ Rails.application.configure do
   #   :enable_starttls_auto => true
   # }
 
-  ActionMailer::Base.smtp_settings = {
+  config.action_mailer.smtp_settings = {
   :authentication => :plain,
   :address => "smtp.mailgun.org",
   :port => 587,
