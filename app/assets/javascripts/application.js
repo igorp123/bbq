@@ -17,4 +17,3 @@
 //= require ekko-lightbox
 //= require lightbox
 //= require_tree .
-
