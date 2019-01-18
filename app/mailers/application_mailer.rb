@@ -1,5 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'gobarbecue.herokuapp.com'
+  default from: 'noreply@gobarbecue.herokuapp.com'
 
   layout 'mailer'
 end

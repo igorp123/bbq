@@ -16,6 +16,6 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user_can_subscribe?(model)
-    !current_user_can_edit?(model)
+    !current_user_can_edit?(model) && @event.subscriptions.find_by(user: current_user).blank?
   end
 end
