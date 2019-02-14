@@ -61,3 +61,5 @@ config.action_mailer.smtp_settings = {
 
 Демо версия доступна в интернете:
 https://gobarbecue.herokuapp.com
+
+![bbq](https://user-images.githubusercontent.com/16538741/52784772-44782500-3067-11e9-8d42-c435e9e22734.png)
